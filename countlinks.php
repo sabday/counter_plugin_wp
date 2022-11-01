@@ -114,15 +114,12 @@ function start_lock_btn() {
             let editorButton = document.querySelector('.editor-post-publish-button');
             let publishButton = document.querySelector('.editor-post-publish-panel__toggle');
 
-            //const editorButton = document.querySelector('.editor-post-publish-button');
+
             if (editorButton)
             {
                 editorButton.setAttribute('aria-disabled', 'true');
-                editorButton.setAttribute('disabled', 'true');
             }
 
-
-            //const publishButton = document.querySelector('.editor-post-publish-panel__toggle');
             if (publishButton)
             {
                 publishButton.setAttribute('aria-disabled', 'true');
@@ -131,7 +128,6 @@ function start_lock_btn() {
             const sign = document.createElement('span');
             sign.classList.add('test-warning-message');
             sign.textContent = 'Need more links';
-            //console.log(document.querySelector('.edit-post-header__settings'));
             document.querySelector('.edit-post-header__settings').append(sign);
         });
     </script>
@@ -147,15 +143,12 @@ function start_unlock_btn() {
             let editorButton = document.querySelector('.editor-post-publish-button');
             let publishButton = document.querySelector('.editor-post-publish-panel__toggle');
 
-            //const editorButton = document.querySelector('.editor-post-publish-button');
             if (editorButton)
             {
                 editorButton.setAttribute('aria-disabled', 'false');
                 editorButton.setAttribute('disabled', 'false');
             }
 
-
-            //const publishButton = document.querySelector('.editor-post-publish-panel__toggle');
             if (publishButton)
             {
                 publishButton.setAttribute('aria-disabled', 'false');
@@ -164,7 +157,6 @@ function start_unlock_btn() {
             const sign = document.createElement('span');
             sign.classList.add('test-succsses-message');
             sign.textContent = 'Done!';
-            //console.log(document.querySelector('.edit-post-header__settings'));
             document.querySelector('.edit-post-header__settings').append(sign);
         });
     </script>
@@ -188,13 +180,11 @@ function my_action_javascript() {
                 if (editorButton)
                 {
                     editorButton.setAttribute('aria-disabled', 'true');
-                    editorButton.setAttribute('disabled', 'true');
                 }
 
                 if (publishButton)
                 {
                     publishButton.setAttribute('aria-disabled', 'true');
-                    //publishButton.setAttribute('disabled', 'true');
                 }
 
                 console.log("Lock Button");
@@ -220,7 +210,6 @@ function my_action_javascript() {
                 if (editorButton)
                 {
                     editorButton.setAttribute('aria-disabled', 'false');
-                    editorButton.setAttribute('disabled', 'false');
                 }
 
                 if (publishButton)
